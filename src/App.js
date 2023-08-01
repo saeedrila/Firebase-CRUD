@@ -5,9 +5,8 @@ function App() {
   return (
     <div className="App">
       <button onClick={()=>{
-        Firebase.firestore().collection('products').doc('pv25wXIL81vYzMQb5Xgh').set({
-          name:'Updated'
-        })
+        Firebase.firestore().collection('products').doc('pv25wXIL81vYzMQb5Xgh').delete()
+        
         console.log('Clicked')
       }}>Click Me!</button>
     </div>
